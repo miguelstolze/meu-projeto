@@ -1,9 +1,10 @@
 .container{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto; /*centralizar na tela*/
-    flex-wrap: wrap; /*quando os elementos ultrapassar a largura ele cria uma nova linha*/
+   flex-wrap: wrap; /* quando os elementos ultrapassar a largura ele cria uma nova linha*/
 }
 
 .min-height{

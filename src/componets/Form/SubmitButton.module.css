@@ -1,0 +1,14 @@
+.btn{
+    background-color: #222;
+    color: #fff;
+    padding: 0.7em 1.2em; /*achatado*/
+    text-decoration: none; 
+    transition: .5s; /*para usar o hover*/
+    cursor: pointer; /*trocar o ponteiro quando :hover */ 
+    border: none;
+    
+}
+
+.btn:hover{
+    color: #ffbb33
+}

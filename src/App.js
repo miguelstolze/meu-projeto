@@ -1,30 +1,30 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 import Container from "./componets/LayOut/Container";
+import Footer from "./componets/LayOut/Footer";
+import NavBar from "./componets/LayOut/NavBar";
 import Company from "./componets/Pages/Company";
 import Contact from "./componets/Pages/Contact";
 import Home from "./componets/Pages/Home";
 import NewProject from "./componets/Pages/NewProject";
+import Projects from "./componets/Pages/Projects";
 function App() {
   return (
     <Router>
-      <ul>
-        <Link to="/">Home</Link>
-        <Link to="/Company">Company</Link>
-        <Link to="/Contact">Contact</Link>
-        <Link to="/NewProject">NewProject</Link>
-      </ul>
+    <NavBar/>
       <Container customClass="min-height">
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/Projects" element={<Projects />}></Route>
           <Route path="/Company" element={<Company />}></Route>
           <Route path="/Contact" element={<Contact />}></Route>
           <Route path="/NewProject" element={<NewProject />}></Route>
         </Routes>
       </Container>
 
-      <p>Footer</p>
+      <Footer/>
     </Router>
   );
 }
+
 
 export default App;
